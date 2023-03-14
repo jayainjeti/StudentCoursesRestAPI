@@ -10,7 +10,7 @@ pipeline{
         }    
         stage('docker build') {
             steps {
-                sh 'docker image build -t jayainjeti/scr:1.0'
+                sh 'docker image build -t jayainjeti/scr:1.0 .'
             }
         }
         stage('docker Push') {
