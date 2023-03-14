@@ -15,7 +15,7 @@ pipeline{
         }
         stage('dockerPush') {
             steps{
-                sh 'docker scan'
+                sh 'docker scan jayainjeti/scr:1.0'
                 sh 'docker image push jayainjeti/scr:1.0'
             }
         }
